@@ -1,0 +1,45 @@
+{
+  "name": "weather-project-vuetify3",
+  "version": "0.0.2",
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "lint": "eslint . --fix --ignore-path .gitignore",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@chakra-ui/vue": "^0.13.1",
+    "@emotion/css": "^11.11.2",
+    "@mdi/font": "7.0.96",
+    "algoliasearch": "^4.20.0",
+    "axios": "^1.5.0",
+    "core-js": "^3.29.0",
+    "emotion": "^10.0.27",
+    "roboto-fontface": "*",
+    "swiper": "^10.2.0",
+    "typed.js": "^2.0.16",
+    "vue": "^3.2.0",
+    "vue-instantsearch": "^4.10.11",
+    "vue-loading-overlay": "6.0",
+    "vue-router": "^4.0.0",
+    "vue-typed-js": "^0.1.2",
+    "vue-writer": "^1.2.0",
+    "vue3-loading-overlay": "^0.0.0",
+    "vuetify": "^3.0.0",
+    "vuetify-google-autocomplete": "^2.1.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "chakra-loader": "^1.0.2",
+    "eslint": "^8.37.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "node-sass": "^9.0.0",
+    "sass": "^1.60.0",
+    "unplugin-fonts": "^1.0.3",
+    "vite": "^4.2.0",
+    "vite-plugin-vuetify": "^1.0.0",
+    "vue-cli-plugin-chakra-ui": "~1.0.3"
+  }
+}

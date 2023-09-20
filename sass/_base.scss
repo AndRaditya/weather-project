@@ -1,0 +1,91 @@
+$bp-biggest: 120em; // 1920px
+$bp-bigger: 100em; // 1600px
+$bp-largest: 80em; // 1280px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-small-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+$bp-mobile: 25em; //400px
+$bp-iphone-se: 23.5em; //400px
+
+:root {
+  font-size: 50%;
+  box-sizing: border-box;
+
+  --color-white: #fff;
+  --color-white-background: #fff;
+
+  --box-shadow-card: 0 0 10px rgba(0, 0, 0, 0.34);
+
+  --color-dark: #7b7b7b;
+  --color-dark-bright: #5c5c5c;
+  --color-dark-grey: #333;
+
+  --color-black: #222;
+  --color-black-grey: #1c1c1c;
+
+  --size-bezel: 2.4rem;
+  --size-radius: 1.2rem;
+
+  --line: rgba(204, 204, 204, 0.5);
+  --box-shadow: rgba(34, 34, 34, 0.15);
+
+  @media only screen and (max-width: $bp-bigger) {
+    font-size: 45%;
+  }
+
+  // @media only screen and (max-width: $bp-largest) {
+  //   font-size: 50%;
+  // }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 35%;
+  }
+
+  @media only screen and (max-width: $bp-mobile) {
+    font-size: 30%;
+  }
+}
+
+* {
+  font-family: "Red Hat Display", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--color-white);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.transition-mode {
+  -webkit-transition: 0.3s cubic-bezier(0.66, 0.34, 0.16, 0.44);
+  transition: background-color 0.3s cubic-bezier(0.66, 0.34, 0.16, 0.44);
+  // transition: cubic-bezier(0.68, -0.55, 0.27, 0.67) 200ms !important;
+  // transition: cubic-bezier(0.17, 0.67, 0.83, 0.67) 200ms !important;
+  // transition: 200ms ease-in-out;
+  transition-delay: 0 !important;
+}
+
+.v-progress-circular--indeterminate > svg {
+  animation: none !important;
+}
+
+// html.transition,
+// html.transition *,
+// html.transition *:before,
+// html.transition *:after {
+//   transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 420ms !important;
+//   transition-delay: 0 !important;
+// }
+
+// #app {
+//   font-family: Avenir, Helvetica, Arial, sans-serif;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+//   text-align: center;
+//   color: #2c3e50;
+// }

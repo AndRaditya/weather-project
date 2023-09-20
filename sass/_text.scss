@@ -1,0 +1,166 @@
+.text {
+  &__interactive {
+    &-title {
+      font-weight: 700;
+      font-size: 3.6rem;
+      padding: 3.6rem 0 0 3.6rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        padding: 0;
+      }
+
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 5rem;
+      }
+    }
+
+    &-subtitle {
+      font-weight: 300;
+      font-size: 3.6rem;
+
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 18px;
+      }
+    }
+
+    &-credit {
+      font-weight: 300;
+      font-size: 1.4rem;
+      padding: 0 0 2.4rem 2.4rem;
+      margin: 0 !important;
+
+      &--link {
+        color: var(--color-white) !important;
+      }
+
+      @media only screen and (max-width: $bp-smallest) {
+        padding: 0 0 0 12px;
+        font-size: 8px;
+      }
+    }
+
+    &-location {
+      text-align: right;
+      font-weight: 300;
+      font-size: 2.4rem;
+      margin: 0 !important;
+
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__functional {
+    &-template {
+      color: var(--color-black);
+      margin: 0 !important;
+      font-size: 3.2rem;
+      @extend .transition-mode;
+    }
+
+    &-title {
+      @extend .text__functional-template;
+      font-weight: 700;
+      padding: 0 !important;
+      @extend .transition-mode;
+
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 3.6rem;
+      }
+    }
+
+    &-date {
+      @extend .text__functional-template;
+      font-weight: 500;
+      @extend .transition-mode;
+    }
+
+    &-daily {
+      @extend .text__functional-template;
+      font-weight: 600;
+      @extend .transition-mode;
+    }
+
+    &-switch {
+      @extend .text__functional-template;
+      font-size: 2.4rem;
+      font-weight: 500 !important;
+      @extend .transition-mode;
+
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 3rem;
+      }
+    }
+
+    &-weather {
+      &__main-title {
+        @extend .text__functional-template;
+        font-weight: 900;
+        font-size: 8.2rem;
+        @extend .transition-mode;
+
+        @media only screen and (max-width: $bp-smallest) {
+          font-size: 9rem;
+        }
+      }
+
+      &__main {
+        @extend .text__functional-template;
+        font-weight: 900;
+        font-size: 5.6rem;
+        @extend .transition-mode;
+
+        @media only screen and (max-width: $bp-smallest) {
+          font-size: 6rem;
+        }
+
+        @media only screen and (max-width: $bp-iphone-se) {
+          font-size: 7rem;
+        }
+      }
+
+      &__second {
+        @extend .text__functional-template;
+        font-weight: 500;
+        font-size: 2.4rem;
+        @extend .transition-mode;
+
+        @media only screen and (max-width: $bp-smallest) {
+          font-size: 3.2rem;
+        }
+      }
+
+      &__feels {
+        @extend .text__functional-template;
+        font-weight: 300;
+        font-size: 2.4rem;
+        @extend .transition-mode;
+
+        @media only screen and (max-width: $bp-smallest) {
+          font-size: 2.6rem;
+        }
+      }
+
+      &__desc {
+        @extend .text__functional-template;
+        font-weight: 500;
+        font-size: 2.4rem !important;
+        opacity: 0.5;
+        @extend .transition-mode;
+
+        @media only screen and (max-width: $bp-large) {
+          font-weight: 400;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+          font-size: 2.8rem;
+        }
+      }
+    }
+  }
+}
+
+.v-label {
+  @extend .text__functional-switch;
+}
